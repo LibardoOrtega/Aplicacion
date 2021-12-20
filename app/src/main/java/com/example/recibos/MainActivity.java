@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         contrasena = findViewById(R.id.contrasena);
     }
     public void iniciarsesion(View view) {
+        Intent i = new Intent(this, PagosActivity.class);
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion",null,1);
         SQLiteDatabase db = admin.getWritableDatabase();
         String email = correo.getText().toString();
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         if (!email.isEmpty() && !password.isEmpty()){
         Cursor fila = db.rawQuery("select correo, contrasena from facturas where correo='"+ email +"' and contrasena='" +password+ "'", null);
             if (fila.moveToFirst()){
-                Intent i = new Intent(this, PagosActivity.class);
+
                 //login.putExtra("usuario", correo.getText().toString());
                 startActivity(i);
                 db.close();
