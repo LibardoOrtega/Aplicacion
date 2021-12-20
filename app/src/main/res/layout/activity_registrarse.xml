@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegistrarseActivity">
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/tv2"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252"
+        android:fontFamily="@font/montserrat_regular"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.350"
+        app:startIconDrawable="@drawable/ic_action_email"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_border"
+            android:ems="10"
+            android:hint="@string/et3"
+            android:inputType="textWebEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.460"
+        app:startIconDrawable="@drawable/ic_action_person"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_border"
+            android:ems="10"
+            android:hint="@string/et4" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.570"
+        app:startIconDrawable="@drawable/ic_action_telephone"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_border"
+            android:ems="10"
+            android:hint="@string/et5"
+            android:inputType="phone"
+            android:maxLength="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.680"
+        app:startIconDrawable="@drawable/ic_action_lock"
+        app:endIconMode="password_toggle"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_border"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/et7"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#40d4a2"
+        android:hint="@string/btn2"
+        android:onClick="registrarusuario"
+        android:textColorHint="#FFFFFF"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.950" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.790"
+        app:startIconDrawable="@drawable/ic_action_lock"
+        app:endIconMode="password_toggle"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confircontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_border"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/et8"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

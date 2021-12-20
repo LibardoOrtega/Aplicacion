@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintVertical_bias="0.06"
+        app:flow_horizontalBias="0.03">
+
+        <TextView
+            android:id="@+id/tv1.2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Seleccione la empresa a la que desea pagar"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.410"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:buttonTint="#40d4a2"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:buttonTint="#40d4a2"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:buttonTint="#40d4a2"/>
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:buttonTint="#40d4a2"/>
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:buttonTint="#40d4a2"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:hintTextColor="@color/Verde"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg"
+            app:layout_constraintVertical_bias="0.480"
+            android:layout_marginTop="25dp"
+            app:startIconDrawable="@drawable/ic_action_list"
+            tools:ignore="TouchTargetSizeCheck">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/factura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/style_border"
+                android:ems="10"
+                android:hint="Digite la factura"
+                android:inputType="text"
+                android:maxLength="32" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:hintTextColor="@color/Verde"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg"
+                app:layout_constraintVertical_bias="0.680"
+                app:startIconDrawable="@drawable/ic_action_monto"
+                android:layout_marginTop="25dp"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/monto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/style_border"
+                    android:ems="10"
+                    android:hint="Digite el monto"
+                    android:inputType="number"
+                    android:maxLength="20" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

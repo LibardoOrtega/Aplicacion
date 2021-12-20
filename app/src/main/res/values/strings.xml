@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Recibos</string>
+    <string name="et1">Ingrese su Correo</string>
+    <string name="et2">Ingrese su Contraseña</string>
+    <string name="btn1">INICIAR SESION</string>
+    <string name="btn2">REGISTRARSE</string>
+    <string name="tv1">PAGOS EN LÍNEA</string>
+    <string name="tv1.0">LOGIN</string>
+    <string name="tv2">REGISTRO</string>
+    <string name="tv3">Llenar cada recuadro para registrar los datos</string>
+    <string name="et3">Correo</string>
+    <string name="et4">Nombre</string>
+    <string name="et5">Telefono</string>
+    <string name="et7">Contraseña</string>
+    <string name="et8">Confirmacion contraseña</string>
+    <string name="btn3">REGISTRAR </string>
+    <string name="tv1.3">Registrar contraseña</string>
+    <string name="tv1.2">Registrar correo</string>
+    <string name="tv1.1">¿Usuario nuevo?</string>
+    <string name="btn4">CONFIRMAR PAGO</string>
+    <string name="btn5">CANCELAR PAGO </string>
+    <string name="btn6">INICIE SESIÓN </string>
+    <string name="tv4">VERIFICAR DATOS</string>
+    <string name="tv5">PAGAR</string>
+    <string name="tv6">A continuación puedes realizar el pago del recibo que deseas, eligiendo las opciones y el monto a pagar!</string>
+    <string name="tv7">VERIFICAR DATOS</string>
+    <string name="tv8">Elija el recibo a pagar</string>
+    <string name="tv8.1">REGISTRAR</string>
+    <string name="tv8.2">PAGAR</string>
+    <string name="btnhis">HISTORIAL</string>
+
+    <string-array name="tipos_agua">
+        <item>Emserpa</item>
+        <item>Imsaguas Ltda</item>
+        <item>Aguas Cool</item>
+        <item>ESPO S.A</item>
+        <item>ADAMIUAIN</item>
+    </string-array>
+
+    <string-array name="tipos_luz">
+        <item>CENS</item>
+        <item>Electrificadora de Santander</item>
+        <item>Electricos Super Luz</item>
+        <item>TotalEnergies</item>
+        <item>Lersa Energia</item>
+    </string-array>
+
+    <string-array name="tipos_internet">
+        <item>Movistar</item>
+        <item>Tigo</item>
+        <item>DirecTV</item>
+        <item>TV Norte</item>
+        <item>Flash Mobile</item>
+    </string-array>
+
+    <string-array name="tipos_gas">
+        <item>Norgas</item>
+        <item>Ensagas</item>
+        <item>Proviservicios S.A. E.S.P.</item>
+        <item>Industrial de Gases S.A.S</item>
+        <item>OIL</item>
+    </string-array>
+</resources>
